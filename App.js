@@ -1,17 +1,12 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import { StyleSheet, SafeAreaView } from 'react-native'
 
-import ImageBackground from './pages/ImageBackground'
+import WelcomeScreen from './pages/WelcomeScreen'
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
-        <StatusBar style="auto" />
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    </SafeAreaView>
+    <WelcomeScreen />
   )
 }
 
