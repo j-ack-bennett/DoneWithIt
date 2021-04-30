@@ -1,5 +1,4 @@
 import React from 'react'
-import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, View, ImageBackground, Image, Text } from 'react-native'
 
 export default function WelcomeScreen() {
