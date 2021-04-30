@@ -1,7 +1,7 @@
 import React from 'react'
 
-import WelcomeScreen from './pages/WelcomeScreen'
-import ViewImageScreen from './pages/ViewImageScreen'
+import WelcomeScreen from './app/pages/WelcomeScreen'
+import ViewImageScreen from './app/pages/ViewImageScreen'
 
 export default function App() {
   return (
