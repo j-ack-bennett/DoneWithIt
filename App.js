@@ -5,6 +5,7 @@ import * as ImagePicker from 'expo-image-picker'
 import WelcomeScreen from './app/pages/WelcomeScreen'
 import ViewImageScreen from './app/pages/ViewImageScreen'
 import Screen from './app/pages/Screen'
+import ImageInput from './app/pages/ImageInput'
 
 export default function App() {
   const [imageUri, setImageUri] = useState()
@@ -35,6 +36,7 @@ export default function App() {
     <Screen>
       <Button title='Select Image' onPress={selectImage} />
       <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
+      <ImageInput imageUri={imageUri} />
     </Screen>
     // <ViewImageScreen />
   )
