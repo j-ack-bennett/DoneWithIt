@@ -9,6 +9,7 @@ import Card from './app/components/Card'
 import Icon from './app/components/Icon'
 import ImageInput from './app/components/ImageInput'
 import ListItem from './app/components/ListItem'
+import ListingsScreen from './app/components/ListingsScreen'
 import Screen from './app/components/Screen'
 import AccountScreen from './app/screens/AccountScreen'
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
@@ -42,7 +43,7 @@ export default function App() {
   }, [])
 
   return (
-    <AccountScreen />
+    <ListingsScreen />
 
     // <Screen>
     //   <Button title='Select Image' onPress={selectImage} />
