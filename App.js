@@ -3,14 +3,14 @@ import { Button, Image, Text, View } from 'react-native'
 import * as ImagePicker from 'expo-image-picker'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
+import AppButton from './app/components/AppButton'
+import AppText from './app/components/AppText'
+import Card from './app/components/Card'
+import ImageInput from './app/components/ImageInput'
+import Screen from './app/components/Screen'
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
 import WelcomeScreen from './app/screens/WelcomeScreen'
 import ViewImageScreen from './app/screens/ViewImageScreen'
-import Screen from './app/pages/Screen'
-import ImageInput from './app/pages/ImageInput'
-import AppText from './app/pages/AppText'
-import AppButton from './app/pages/AppButton'
-import Card from './app/pages/Card'
-import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
 
 export default function App() {
   const [imageUri, setImageUri] = useState()
