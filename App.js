@@ -10,10 +10,11 @@ import Icon from './app/components/Icon'
 import ImageInput from './app/components/ImageInput'
 import ListItem from './app/components/ListItem'
 import Screen from './app/components/Screen'
+import AccountScreen from './app/screens/AccountScreen'
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
+import MessagesScreen from './app/screens/MessagesScreen'
 import WelcomeScreen from './app/screens/WelcomeScreen'
 import ViewImageScreen from './app/screens/ViewImageScreen'
-import MessagesScreen from './app/screens/MessagesScreen'
 
 export default function App() {
   const [imageUri, setImageUri] = useState()
@@ -41,13 +42,7 @@ export default function App() {
   }, [])
 
   return (
-    <Screen>
-      <ListItem 
-        title='My title' 
-        subTitle='My subtitle'
-        ImageComponent={<Icon name='email' />}
-      />
-    </Screen>
+    <AccountScreen />
 
     // <Screen>
     //   <Button title='Select Image' onPress={selectImage} />
