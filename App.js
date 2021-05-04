@@ -6,11 +6,14 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import AppButton from './app/components/AppButton'
 import AppText from './app/components/AppText'
 import Card from './app/components/Card'
+import Icon from './app/components/Icon'
 import ImageInput from './app/components/ImageInput'
+import ListItem from './app/components/ListItem'
 import Screen from './app/components/Screen'
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
 import WelcomeScreen from './app/screens/WelcomeScreen'
 import ViewImageScreen from './app/screens/ViewImageScreen'
+import MessagesScreen from './app/screens/MessagesScreen'
 
 export default function App() {
   const [imageUri, setImageUri] = useState()
@@ -38,7 +41,13 @@ export default function App() {
   }, [])
 
   return (
-    <ViewImageScreen />
+    <Screen>
+      <ListItem 
+        title='My title' 
+        subTitle='My subtitle'
+        ImageComponent={<Icon name='email' />}
+      />
+    </Screen>
 
     // <Screen>
     //   <Button title='Select Image' onPress={selectImage} />
