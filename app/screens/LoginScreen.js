@@ -1,6 +1,5 @@
 import React from 'react'
 import { Image, StyleSheet } from 'react-native'
-import { Formik } from 'formik'
 import * as yup from 'yup'
 
 import AppForm from '../components/AppForm'
@@ -11,14 +10,12 @@ import SubmitButton from '../components/SubmitButton'
 const validationSchema = yup.object().shape({
   email: yup
     .string()
-    .required()
-    .email()
-    .label('Email'),
+    .required('Email field is required')
+    .email('Not a valid email address'),
   password: yup
     .string()
-    .required()
+    .required('Password field is required')
     .min(4, 'Password is too short')
-    .label('Password')
 })
 
 export default function LoginScreen() {
