@@ -3,7 +3,9 @@ import { Image, StyleSheet } from 'react-native'
 import * as yup from 'yup'
 
 import Screen from '../components/Screen'
-import { AppForm, AppFormField, SubmitButton } from '../components/forms'
+import AppForm from '../components/forms/AppForm'
+import AppFormField from '../components/forms/AppFormField'
+import SubmitButton from '../components/forms/SubmitButton'
 
 const validationSchema = yup.object().shape({
   email: yup
