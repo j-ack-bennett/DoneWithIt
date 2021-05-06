@@ -2,13 +2,11 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import * as yup from 'yup'
 
-import { 
-  Appform, 
-  AppFormField, 
-  AppFormPicker, 
-  SubmitButton 
-} from '../components/forms'
 import Screen from '../components/Screen'
+import Appform from '../components/forms/AppForm'
+import AppFormField from '../components/forms/AppFormField'
+import AppFormPicker from '../components/forms/AppFormPicker'
+import SubmitButton from '../components/forms/SubmitButton'
 
 const validationSchema = yup.object().shape({
   title: yup
