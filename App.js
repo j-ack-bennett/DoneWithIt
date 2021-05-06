@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import * as ImagePicker from 'expo-image-picker'
 
-import LoginScreen from './app/screens/LoginScreen'
 import ListingEditScreen from './app/screens/ListingEditScreen'
 
 export default function App() {
@@ -30,7 +29,6 @@ export default function App() {
   }, [])
 
   return (
-    // <LoginScreen />
     <ListingEditScreen />
 
     // <Screen>
