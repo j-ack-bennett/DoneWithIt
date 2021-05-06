@@ -2,20 +2,20 @@ import React from 'react'
 import { Image, StyleSheet } from 'react-native'
 import * as yup from 'yup'
 
-import AppForm from '../components/AppForm'
-import AppFormField from '../components/AppFormField'
 import Screen from '../components/Screen'
-import SubmitButton from '../components/SubmitButton'
+import { AppForm, AppFormField, SubmitButton } from '../components/forms'
 
 const validationSchema = yup.object().shape({
   email: yup
     .string()
-    .required('Email field is required')
-    .email('Not a valid email address'),
+    .required()
+    .email('Not a valid email address')
+    .label('Email'),
   password: yup
     .string()
-    .required('Password field is required')
+    .required()
     .min(4, 'Password is too short')
+    .label('Password')
 })
 
 export default function LoginScreen() {
