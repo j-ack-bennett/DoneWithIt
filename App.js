@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import * as ImagePicker from 'expo-image-picker'
 
-import ListingEditScreen from './app/screens/ListingEditScreen'
+import LoginScreen from './app/screens/LoginScreen'
 
 export default function App() {
   const [imageUri, setImageUri] = useState()
@@ -29,8 +29,7 @@ export default function App() {
   }, [])
 
   return (
-    <ListingEditScreen />
-
+    <LoginScreen />
     // <Screen>
     //   <Button title='Select Image' onPress={selectImage} />
     //   <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
