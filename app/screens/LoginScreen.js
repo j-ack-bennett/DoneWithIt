@@ -11,13 +11,17 @@ const validationSchema = yup.object().shape({
   email: yup
     .string()
     .required()
-    .email('Not a valid email address')
+    .email()
     .label('Email'),
   password: yup
     .string()
     .required()
     .min(4, 'Password is too short')
     .label('Password')
+    .matches(
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+    )
 })
 
 export default function LoginScreen() {
